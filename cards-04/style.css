@@ -48,9 +48,14 @@ body {
 }
 
 .card__preview img {
+    max-width: 100%;
     width: 100%;
     object-fit: cover;
     transition: all 0.4s ease-out;
+}
+
+.product_image{
+    max-width: 100%;
 }
 
 .card:hover .card__preview img {
@@ -131,3 +136,56 @@ body {
     stroke: var(--like);
     fill: var(--like);
 }
+
+
+.input__wrapper {
+    position: relative;
+    align-content: center;
+    padding-right: 100px;
+    margin-top: -500px;
+    margin-right: -750px;
+    margin-bottom: 100px;
+  }
+  
+  .input__field {
+    outline: 1.5px solid var(
+      --secondary);
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    color: var(--secondary);
+    padding: 0.5rem;
+    border: none;
+    padding-right: 2rem;
+    background: transparent;
+    transition: all 0.2s;
+  }
+  
+  .input__field:placeholder-shown
+  ~.input__label {
+    font-size: 1rem;
+    cursor: text;
+    color: var(--secondary);
+    top: 1.5rem;
+  }
+  
+  
+  .input__field:focus~.input__label {
+    color: var(--primary);
+  }
+  
+  .input__field:focus {
+    outline: 1.5px solid var(--primary);
+  }
+  
+  .input__icon {
+    position: absolute;
+    right: -0.625rem;
+    bottom: -0.625rem;
+    width: 1.75rem;
+    height: 1.75rem;
+    transform: translate(-50%, -50%);
+    transform-origin: center;
+    cursor: pointer;
+  }
+  
+  

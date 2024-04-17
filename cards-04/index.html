@@ -13,17 +13,28 @@
 </head>
 
 <body>
-    <div class="cards">
+    <div class="input__wrapper">
+        <input
+            id="productId"
+            type="number"
+            name="productId"
+            placeholder="Insert id for a product"
+            class="input__field"
+        >
+        <button class='button-glow' title="productFinder" onclick=callTheRightAPI()>Find Product</button>
+    </div>
+    <br>
+    <div class="cards" id="cards_div">
         <article class="card">
             <div class="card__preview">
-                <img src="assets/lakeview-elegance.png" alt="Lakeview Elegance preview">
+                <img id="product_image" src="assets/lakeview-elegance.png" alt="Lakeview Elegance preview">
                 <div class="card__price">
                     $4,750,000
                 </div>
             </div>
             <div class="card__content">
                 <h2 class="card__title">Lakeview Elegance</h2>
-                <p class="card__address">
+                <p class="card_category">
                     258 Serenity Lane, Crestwood Hills
                 </p>
                 <p class="card__description">
@@ -36,7 +47,7 @@
                     windows and outdoor spaces that blend seamlessly with the serene lakeside setting.
                 </p>
                 <div class="card__bottom">
-                    <div class="card__properties">
+                    <div class="card_rating">
                         3 Bed | 2 Bath | 7,500 sq. ft
                     </div>
                     <button class="card__btn">
@@ -52,7 +63,7 @@
         </article>
         <article class="card">
             <div class="card__preview">
-                <img src="assets/vista-paradiso.png" alt="Vista Paradiso">
+                <img id="product_image" src="assets/vista-paradiso.png" alt="Vista Paradiso">
                 <div class="card__price">
                     $4,500,000
                 </div>
