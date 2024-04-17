@@ -95,7 +95,7 @@ body {
     color: var(--text);
 }
 
-.card__bottom {
+.card_bottom {
     margin-top: auto;
     display: flex;
     justify-content: space-between;
