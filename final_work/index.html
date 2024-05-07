@@ -1,6 +1,3 @@
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,66 +13,70 @@
 </head>
 
 <body>
-    <div class="box">
-        <div class="input__wrapper">
-            <input 
-                id="firstName" 
-                type="text" 
-                name="firstname" 
-                placeholder="Your first name" 
-                required class="input__field"
+    <form method="post">
+        <div class="box">
+            <div class="input__wrapper">
+                <input
+                        id="firstName"
+                        type="text"
+                        name="firstname"
+                        placeholder="Your first name"
+                        required class="input__field"
+                >
+                <label for="firstname" class="input__label">
+                    First name
+                </label>
+            </div>
+            <div class="input__wrapper">
+                <input
+                        id="lastName"
+                        type="text"
+                        name="lastname"
+                        placeholder="Your last name"
+                        required class="input__field"
+                >
+                <label for="lastname" class="input__label">
+                    Last name
+                </label>
+            </div>
+            <div class="input__wrapper">
+                <input
+                        id="identificationNumber"
+                        type="text"
+                        name="name"
+                        maxlength="10"
+                        placeholder="Your identification number"
+                        required class="input__field"
+                >
+                <label for="identificationNumber" class="input__label">
+                    Identification number
+                </label>
+            </div>
+            <div class="input__wrapper">
+                <input
+                        id="city"
+                        type="text"
+                        name="city"
+                        maxlength="10"
+                        placeholder="City"
+                        required class="input__field"
+                >
+                <label for="city" class="input__label">
+                    City
+                </label>
+            </div>
+            <br>
+            <a
+                    href="https://learning.atheros.ai"
+                    title="Atheros Learning Platform"
+                    class='cta-button'
             >
-            <label for="firstname" class="input__label">
-                First name
-            </label>
+                Submit
+            </a>
         </div>
-        <div class="input__wrapper">
-            <input 
-                id="lastName" 
-                type="text" 
-                name="lastname" 
-                placeholder="Your last name" 
-                required class="input__field"
-            >
-            <label for="lastname" class="input__label">
-                Last name
-            </label>
-        </div>
-        <div class="input__wrapper">
-            <input 
-                id="identificationNumber" 
-                type="text" 
-                name="name" 
-                maxlength="10"
-                placeholder="Your identification number" 
-                required class="input__field"
-            >
-            <label for="name" class="input__label">
-                Identification number
-            </label>
-        </div>
-        <div class="input__wrapper">
-            <input 
-                id="password" 
-                type="password" 
-                name="password" 
-                placeholder="Your Password" 
-                title="Minimum 6 characters at least 1 Alphabet and 1 Number" 
-                pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$"
-                required class="input__field"
-            >
-            <label for="password" class="input__label">
-                Password
-            </label>
-            <img 
-                alt="Eye Icon" title="Eye Icon" 
-                src="assets/eye.svg" class="input__icon"
-            >
-        </div>
-    </div>
+    </form>
     <script src="script.js"></script>
 </body>
-
 </html>
 
 
