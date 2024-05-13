@@ -105,8 +105,8 @@
 .cta-button {
   box-shadow: 0 0 0 0 var(--accent);
   outline: 2px solid;
-  color: white;
-  outline-color: white;
+  color: black;
+  outline-color: #FF9950FF;
   outline-offset: 0;
   text-shadow: none;
   cursor: pointer;
@@ -124,6 +124,7 @@
   transition: all 550ms cubic-bezier(
           .36, .63, .5, .73
   );
+  border-radius: 9px;
 }
 
 
