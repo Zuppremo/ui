@@ -31,6 +31,10 @@
     padding-top: 0.75rem;
     border-radius: 1rem;
   }
+  .box2{
+    align-items: center;
+    align-content: center;
+  }
   
   .box h2 {
     margin: 0;
@@ -157,33 +161,13 @@
 
 .table-widget thead tr {
   background: var(--th-background);
+  color: #EAEAEA;
 }
 
 .table-widget .caption {
   display: flex;
   justify-content: space-between;
   color: #EAEAEA;
-}
-
-.table-widget .export-btn {
-  background: none;
-  color: var(--text-color);
-  border: none;
-  cursor: pointer;
-  font-weight: 600;
-  font-size: 1.2rem;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.table-widget .export-btn:hover {
-  color: var(--primary);
-}
-
-.table-widget .export-btn svg {
-  width: 2rem;
-  height: 2rem;
 }
 
 .table-widget th {
@@ -226,7 +210,6 @@
 .profile-info {
   display: flex;
   flex-direction: column;
-  gap: 0.25rem;
 }
 
 .profile-info__name {
@@ -234,31 +217,11 @@
   white-space: nowrap;
 }
 
-
 .status {
   display: flex;
   font-weight: 700;
-  gap: 0.5rem;
   align-items: center;
-}
-
-.status__circle {
-  display: inline-block;
-  height: 0.5rem;
-  width: 0.5rem;
-  border-radius: 50%
-}
-
-.status--active {
-  background: #2ECC71;
-}
-
-.status--inactive {
-  background: #ffd071;
-}
-
-.status--offline {
-  background-color: var(--gray);
+  padding-left: 2rem;
 }
 
 .tags {
