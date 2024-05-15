@@ -19,7 +19,7 @@
     background-color: var(--background);
     display: grid;
     place-items: center;
-    height: 100vh;
+    height: 90vh;
   }
   
   .box {
@@ -28,7 +28,6 @@
     padding: 1.5rem;
     max-width: fit-content;
     width: 100%;
-    padding-top: 0.75rem;
     border-radius: 1rem;
   }
   .box2{
@@ -173,7 +172,6 @@
   border-radius: 1rem;
   background: var(--table-background);
   padding: 1.5rem;
-  padding-top: 10rem;
   text-align: left;
   overflow-x: auto;
   user-select: none;
