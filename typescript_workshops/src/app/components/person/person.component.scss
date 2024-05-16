@@ -13,7 +13,6 @@
 body {
     background-color: var(--background);
     display: grid;
-    height: 100vh;
     margin: 0;
     font-size: 16px;
     font-family: 'Red Hat Display', sans-serif;
@@ -178,6 +177,7 @@ border-radius: 1rem;
 .input__wrapper {
 position: relative;
 padding: 1rem 0 0;
+padding-top: 1rem;
 }
 
 .input__field {
@@ -187,7 +187,6 @@ outline: 0;
 color: var(--text);
 padding: 0.25rem 0px;
 padding-right: 2rem;
-
 background: transparent;
 transition: border-color 0.2s;
 }
