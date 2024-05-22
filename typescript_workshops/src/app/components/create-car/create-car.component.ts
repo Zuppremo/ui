@@ -25,12 +25,30 @@ export class CreateCarComponent {
     createString : string = "";
 
     @Output()
-    eventCreateCAr = new EventEmitter<ICar>();
-    
-    let createdCar : ICar = {
-        id: this.id; 
-        name : this.name,
+    eventCreateCar = new EventEmitter<ICar>();
 
+
+    saveCar()
+    {
+        let createdCar: ICar = {
+          id: this.id,
+          name : this.name,
+          price: this.price,
+          description: this.description,
+          brand: this.brand,
+          kms: this.kms,
+          location: {
+            neighborhood: this.neighborhood,
+            locality: this.locality
+          },
+          image: this.image,
+          owner : {
+            ownerName: this.ownerName,
+            ownerImage: this.ownerImage
+        }
+
+        this.eventCreateCar.emit(createdCar);
+        }
     }
 
 }
