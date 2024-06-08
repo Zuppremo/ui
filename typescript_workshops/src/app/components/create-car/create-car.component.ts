@@ -35,6 +35,7 @@ export class CreateCarComponent {
           name : this.name,
           price: this.price,
           description: this.description,
+          year: this.year,
           brand: this.brand,
           kms: this.kms,
           location: {
@@ -43,12 +44,11 @@ export class CreateCarComponent {
           },
           image: this.image,
           owner : {
-            ownerName: this.ownerName,
-            ownerImage: this.ownerImage
+            name: this.ownerName,
+            image: this.ownerImage
         }
-
+        }
         this.eventCreateCar.emit(createdCar);
-        }
     }
 
 }

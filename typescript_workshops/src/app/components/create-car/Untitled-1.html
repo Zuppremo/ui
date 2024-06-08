@@ -1,0 +1,130 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>PetmÃ¡tico</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url('https://i.ibb.co/ZJZVJwy/Gato.jpg');
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        form {
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            width: 90%;
+            max-width: 500px;
+        }
+        input[type=number] {
+            padding: 5px; /* Reduce padding */
+            margin: 5px 0; /* Reduce margin */
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 80px; /* Set a fixed width */
+        }
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+        input[type=submit], .manual-button {
+            padding: 10px 20px;
+            background-color: #5cb85c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 48%;
+            text-align: center;
+        }
+        input[type=submit]:hover, .manual-button:hover {
+            background-color: #4cae4c;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-top: 0;
+        }
+        .time-inputs {
+            display: flex;
+            flex-direction: column;
+        }
+        .time-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .time-container div {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .time-container input {
+            margin: 0 5px;
+        }
+
+        @media (min-width: 600px) {
+            .time-inputs {
+                flex-direction: row;
+            }
+            .time-container {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .time-container input {
+                width: calc(100% - 10px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <form action="/get" method="get">
+        <h1>Programa el alimento de tu mascota</h1>
+        <div class="time-inputs">
+            <div class="time-container">
+                <div>
+                    <label for="breakfastInputHour">Hora del desayuno:</label>
+                    <input type="number" id="breakfastInputHour" name="breakfastInputHour" min="0" max="23">
+                </div>
+                <div>
+                    <label for="breakfastInputMinute">Minuto:</label>
+                    <input type="number" id="breakfastInputMinute" name="breakfastInputMinute" min="0" max="59">
+                </div>
+            </div>
+            <div class="time-container">
+                <div>
+                    <label for="lunchInputHour">Hora del almuerzo:</label>
+                    <input type="number" id="lunchInputHour" name="lunchInputHour" min="0" max="23">
+                </div>
+                <div>
+                    <label for="lunchInputMinute">Minuto:</label>
+                    <input type="number" id="lunchInputMinute" name="lunchInputMinute" min="0" max="59">
+                </div>
+            </div>
+            <div class="time-container">
+                <div>
+                    <label for="dinnerInputHour">Hora de la cena:</label>
+                    <input type="number" id="dinnerInputHour" name="dinnerInputHour" min="0" max="23">
+                </div>
+                <div>
+                    <label for="dinnerInputMinute">Minuto:</label>
+                    <input type="number" id="dinnerInputMinute" name="dinnerInputMinute" min="0" max="59">
+                </div>
+            </div>
+        </div>
+        <div class="button-container">
+            <input type="submit" value="Establecer Horarios">
+            <button type="submit" class="manual-button" name="feeding">Manual</button>
+        </div>
+    </form>
+</body>
+</html>
